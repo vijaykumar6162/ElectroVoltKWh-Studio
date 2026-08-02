@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>ElectroVoltKWh Editor</title>
+
+<link rel="stylesheet" href="editor.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<div class="logo">
+
+⚡ ElectroVoltKWh Editor
+
+</div>
+
+<div class="top-buttons">
+
+<button>💾 Save</button>
+
+<button>📂 Open</button>
+
+<button>📤 Export PNG</button>
+
+<button>📄 Export PDF</button>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<aside class="left-panel">
+
+<h2>Electrical Components</h2>
+
+<div class="component">MCB</div>
+
+<div class="component">RCCB</div>
+
+<div class="component">Contactor</div>
+
+<div class="component">Relay</div>
+
+<div class="component">Motor</div>
+
+<div class="component">Transformer</div>
+
+<div class="component">Meter</div>
+
+<div class="component">Switch</div>
+
+<div class="component">Socket</div>
+
+<div class="component">Earth Pit</div>
+
+</aside>
+
+<main class="canvas-area">
+
+<div id="canvas">
+
+Electrical Drawing Area
+
+</div>
+
+</main>
+
+<aside class="right-panel">
+
+<h2>Properties</h2>
+
+<p>Select a component</p>
+
+</aside>
+
+</div>
+
+<script src="editor.js"></script>
+
+</body>
+
+</html>
