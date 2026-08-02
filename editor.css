@@ -136,19 +136,10 @@ background:white;
 
 border-radius:10px;
 
-color:black;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-font-size:28px;
-
-/* Step 9 ke liye ye add karo */
 position:relative;
 
 overflow:hidden;
+
+color:black;
 
 }
