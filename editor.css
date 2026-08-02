@@ -157,3 +157,28 @@ background:#0E2035;
 padding:20px;
 
 }
+.drop-text{
+
+color:#888;
+
+font-size:26px;
+
+}
+
+.canvas-item{
+
+position:absolute;
+
+background:#FFD700;
+
+padding:10px 20px;
+
+border-radius:8px;
+
+cursor:move;
+
+font-weight:bold;
+
+user-select:none;
+
+}
