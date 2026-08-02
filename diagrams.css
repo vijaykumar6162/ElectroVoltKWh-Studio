@@ -280,3 +280,14 @@ padding:20px;
 }
 
 }
+.diagram-category button.active{
+
+background:#FFD700;
+
+color:#000;
+
+font-weight:bold;
+
+box-shadow:0 0 15px rgba(255,215,0,.5);
+
+}
