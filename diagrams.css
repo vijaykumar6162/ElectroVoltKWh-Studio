@@ -1,0 +1,282 @@
+/* ==========================
+ElectroVoltKWh Diagram Library
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#081521;
+color:white;
+}
+
+/* ==========================
+Header
+========================== */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#10263F;
+border-bottom:2px solid #1E3D5A;
+}
+
+.logo h2{
+font-size:34px;
+color:#FFD700;
+}
+
+.logo span{
+color:white;
+}
+
+.logo p{
+color:#ccc;
+margin-top:5px;
+}
+
+/* ==========================
+Search Box
+========================== */
+
+.search-box{
+display:flex;
+width:500px;
+height:50px;
+background:white;
+border-radius:50px;
+overflow:hidden;
+}
+
+.search-box input{
+flex:1;
+border:none;
+outline:none;
+padding-left:20px;
+font-size:16px;
+}
+
+.search-box button{
+width:60px;
+background:#FFD700;
+border:none;
+cursor:pointer;
+font-size:18px;
+}
+
+/* ==========================
+Navbar
+========================== */
+
+nav{
+background:#0D2238;
+padding:15px;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#FFD700;
+}
+
+/* ==========================
+Page Title
+========================== */
+
+.page-title{
+text-align:center;
+padding:70px 20px;
+}
+
+.page-title h1{
+font-size:50px;
+color:#FFD700;
+margin-bottom:15px;
+}
+
+.page-title p{
+font-size:20px;
+color:#bbb;
+}
+
+/* ==========================
+Category Buttons
+========================== */
+
+.diagram-category{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+padding:40px;
+}
+
+.diagram-category button{
+padding:14px 28px;
+border:none;
+background:#183552;
+color:white;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+transition:.3s;
+}
+
+.diagram-category button:hover{
+background:#FFD700;
+color:black;
+}
+
+/* ==========================
+Diagram Grid
+========================== */
+
+.diagram-list{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:35px;
+padding:60px;
+}
+
+/* ==========================
+Card
+========================== */
+
+.diagram-card{
+background:#10263F;
+border-radius:18px;
+overflow:hidden;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.diagram-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(255,215,0,.25);
+}
+
+.diagram-card img{
+width:100%;
+height:230px;
+object-fit:cover;
+transition:.4s;
+}
+
+.diagram-card:hover img{
+transform:scale(1.08);
+}
+
+.diagram-card h3{
+padding:20px 20px 10px;
+font-size:24px;
+}
+
+.diagram-card p{
+padding:0 20px 20px;
+color:#ccc;
+line-height:1.6;
+}
+
+.diagram-card a{
+text-decoration:none;
+}
+
+.diagram-card button{
+margin:20px;
+padding:14px 30px;
+width:calc(100% - 40px);
+background:#FFD700;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:17px;
+font-weight:bold;
+transition:.3s;
+}
+
+.diagram-card button:hover{
+background:#00B894;
+color:white;
+}
+
+/* ==========================
+Footer
+========================== */
+
+footer{
+margin-top:60px;
+padding:30px;
+text-align:center;
+background:#10263F;
+color:#bbb;
+}
+
+/* ==========================
+Responsive
+========================== */
+
+@media(max-width:992px){
+
+header{
+flex-direction:column;
+gap:20px;
+padding:20px;
+}
+
+.search-box{
+width:100%;
+}
+
+.page-title h1{
+font-size:36px;
+}
+
+.diagram-list{
+padding:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+nav ul{
+flex-wrap:wrap;
+gap:15px;
+}
+
+.page-title h1{
+font-size:30px;
+}
+
+.diagram-category{
+padding:20px;
+}
+
+.diagram-category button{
+width:100%;
+}
+
+.diagram-list{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+}
