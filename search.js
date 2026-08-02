@@ -42,3 +42,8 @@ card.style.display = "none";
 });
 
 }
+searchInput.addEventListener("keyup", function(){
+
+filterDiagrams();
+
+});
