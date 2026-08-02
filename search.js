@@ -47,3 +47,22 @@ searchInput.addEventListener("keyup", function(){
 filterDiagrams();
 
 });
+filterButtons.forEach(function(button){
+
+button.addEventListener("click",function(){
+
+currentCategory = this.dataset.filter;
+
+filterButtons.forEach(function(btn){
+
+btn.classList.remove("active");
+
+});
+
+this.classList.add("active");
+
+filterDiagrams();
+
+});
+
+});
