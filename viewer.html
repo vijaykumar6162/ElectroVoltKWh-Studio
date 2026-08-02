@@ -18,17 +18,56 @@
 
 <img id="viewerImage" src="" alt="Diagram">
 
-<div class="viewer-buttons">
+<div class="viewer-toolbar">
 
-<button onclick="zoomIn()">➕ Zoom In</button>
+<button id="likeBtn">
+<i class="fa-solid fa-heart"></i>
+Like
+</button>
 
-<button onclick="zoomOut()">➖ Zoom Out</button>
+<button id="favBtn">
+<i class="fa-solid fa-star"></i>
+Favorite
+</button>
 
-<button onclick="downloadImage()">⬇ Download</button>
+<button onclick="zoomIn()">
+<i class="fa-solid fa-magnifying-glass-plus"></i>
+Zoom In
+</button>
 
-<button onclick="goBack()">❌ Close</button>
+<button onclick="zoomOut()">
+<i class="fa-solid fa-magnifying-glass-minus"></i>
+Zoom Out
+</button>
+
+<button onclick="toggleFullscreen()">
+<i class="fa-solid fa-expand"></i>
+Fullscreen
+</button>
+
+<button onclick="shareDiagram()">
+<i class="fa-solid fa-share-nodes"></i>
+Share
+</button>
+
+<button onclick="downloadImage()">
+<i class="fa-solid fa-download"></i>
+Download
+</button>
+
+<button onclick="goBack()">
+<i class="fa-solid fa-xmark"></i>
+Close
+</button>
 
 </div>
+
+<div class="viewer-info">
+
+<span>
+👁 Views:
+<span id="viewCount">0</span>
+</span>
 
 </div>
 
