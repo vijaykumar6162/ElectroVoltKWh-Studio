@@ -39,3 +39,40 @@ canvas.addEventListener("drop", (e) => {
     makeDraggable(item);
 
 });
+function makeDraggable(element){
+
+let isDragging = false;
+
+let offsetX = 0;
+
+let offsetY = 0;
+
+element.addEventListener("mousedown",(e)=>{
+
+isDragging = true;
+
+offsetX = e.offsetX;
+
+offsetY = e.offsetY;
+
+});
+
+document.addEventListener("mousemove",(e)=>{
+
+if(!isDragging) return;
+
+const rect = canvas.getBoundingClientRect();
+
+element.style.left = (e.clientX - rect.left - offsetX) + "px";
+
+element.style.top = (e.clientY - rect.top - offsetY) + "px";
+
+});
+
+document.addEventListener("mouseup",()=>{
+
+isDragging = false;
+
+});
+
+}
