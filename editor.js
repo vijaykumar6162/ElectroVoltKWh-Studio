@@ -1,39 +1,41 @@
-const components=document.querySelectorAll(".component");
+const components = document.querySelectorAll(".component");
 
-const canvas=document.getElementById("canvas");
+const canvas = document.getElementById("canvas");
 
-let selectedText="";
+let selectedText = "";
 
-components.forEach(component=>{
+components.forEach(component => {
 
-component.addEventListener("dragstart",()=>{
+    component.addEventListener("dragstart", () => {
 
-selectedText=component.innerText;
+        selectedText = component.innerText;
 
-});
-
-});
-
-canvas.addEventListener("dragover",(e)=>{
-
-e.preventDefault();
+    });
 
 });
 
-canvas.addEventListener("drop",(e)=>{
+canvas.addEventListener("dragover", (e) => {
 
-e.preventDefault();
+    e.preventDefault();
 
-const item=document.createElement("div");
+});
 
-item.className="canvas-item";
+canvas.addEventListener("drop", (e) => {
 
-item.innerText=selectedText;
+    e.preventDefault();
 
-item.style.left=e.offsetX+"px";
+    const item = document.createElement("div");
 
-item.style.top=e.offsetY+"px";
+    item.className = "canvas-item";
 
-canvas.appendChild(item);
+    item.innerText = selectedText;
+
+    item.style.left = e.offsetX + "px";
+
+    item.style.top = e.offsetY + "px";
+
+    canvas.appendChild(item);
+
+    makeDraggable(item);
 
 });
